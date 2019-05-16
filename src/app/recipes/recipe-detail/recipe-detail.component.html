@@ -38,6 +38,11 @@
 </div>
 <div class="row">
     <div class="col-12">
-        Ingredients
+        <ul class="list-group">
+            <li class="list-group-item" appDropdown
+                *ngFor="let ingredient of recipe.ingredients">
+                {{ingredient.name}} - {{ingredient.amount}}
+            </li>
+        </ul>
     </div>
 </div>
